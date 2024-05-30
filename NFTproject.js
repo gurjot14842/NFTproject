@@ -1,3 +1,4 @@
+let numOfNfts =0;
 //we have created an array which will store information related to NFT
 let nftCollection = [];
 
@@ -14,6 +15,7 @@ function mintNFT(name, fathername, dateCreated, description, adress)
     };
     
     nftCollection.push(nft);
+    numOfNfts++;
     console.log(`We have Minted NFT: ${name}`);
 }
 
@@ -38,7 +40,7 @@ function listNFTs()
 
 //Function to get the total number of NFt we have added in the nftCollection array
 function getTotalSupply() {
-    console.log(`Total Supply: ${nftCollection.length}`);
+    console.log(`Total Supply The total no of NFT created : ${numOfNfts}`);
 }
 
 //to Create a nft we have to use function mintNFT
@@ -52,4 +54,4 @@ listNFTs();
 
 //to get total no of NFTs minted by us
 getTotalSupply();
-//code by gurjot singh 22bcs14842
+//code written by GURJOT SINGH 22BCS14842 CHANDIGARH UNIVERSITY
